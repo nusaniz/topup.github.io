@@ -1,0 +1,18 @@
+
+.jumbotron {
+    padding-top: 6rem;
+    background-color: #e2edff;
+  }
+  
+  #projects {
+    background-color: #e2edff;
+  }
+  
+  section {
+    padding-top: 5rem;
+  }
+
+  .mb-3 select {
+    width: 100%;
+    padding: 0.5rem;
+  }

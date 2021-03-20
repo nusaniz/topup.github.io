@@ -13,82 +13,130 @@
 
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
+    <style>
+.container.product {
+  margin-top: 5rem;
+  /* margin: 5rem 0 0 0; */
+}
 
-    <title>Nizar | Top Up</title>
+      .container p {
+          text-align: justify;
+      }
+
+      .col-md-4 {
+          border: 1px solid;
+          display: flex;
+          justify-content: center;
+      }
+
+      .pr {
+          border: 1px solid;
+          /* display: flex; */
+          justify-content: center;
+          /* padding: 0.1rem; */
+          padding: 0.3rem;
+          width: 33.33333%;
+          align-items: center;
+      }
+
+      .pr img {
+          box-sizing: border-box;
+          width: 100%;
+          border-radius: 20%;
+      }
+
+      .pr p {
+        margin: 0;
+      }
+
+      .pr.soon  {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+
+      .gbr-title {
+        /* text-align: center; */
+        border: 1px solid;
+      }
+
+      .gbr-title p {
+        text-transform: capitalize;
+        text-align: center;
+        font-size: x-small;
+      }
+
+      .product-row {
+          box-sizing: border-box;
+          max-width: 100%;
+          /* width: 100%; */
+          display: flex;
+          border: 1px solid;
+      }
+  </style>
+
+    <title>Nizar | Home</title>
   </head>
   <body id="home">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="logo.png" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="./img/logo.png" alt=""></a>
 
       </div>
     </nav>
     <!-- Akhir Navbar -->
 
-    <!-- Contact -->
-    <section id="contact">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>TopUp Free Fire</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center" style="margin: 2rem 0 0 0;">
-          <div class="col-md-6">
-            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-              Pesanan anda sedang di proses.
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            <form name="nizar-contact-form">
-              <div class="mb-3">
-                <label for="uid" class="form-label">User ID</label>
-                <input type="number" class="form-control" id="uid" aria-describedby="uid" name="uid" required value="23525235"/>
-              </div>
-              <div class="mb-3">
-                <label for="nama" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="nama" aria-describedby="nama" name="nama" required value="nama"/>
-              </div>
-              <div class="mb-3 d-none">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" name="email"/>
-              </div>
-              <div class="mb-3">
-                <label for="nohp" class="form-label">No Hp</label>
-                <input type="number" class="form-control" id="nohp" aria-describedby="nohp" name="nohp" required value="08329857892357"/>
-              </div>
-              <div class="mb-3">
-                <label for="topup" class="form-label">Jumlah</label>
-                <!-- <textarea class="form-control" id="pesan" rows="3" name="pesan" required></textarea> -->
-                <select name="topup" id="topup" required>
-                    <option value="" disabled>Pilih diamond</option>
-                    <option value="5/2.000">5🔷 / Rp. 2.000</option>
-                    <option value="12/3.000">12🔷 / Rp. 3.000</option>
-                    <option value="50/9.000">50🔷 / Rp. 9.000</option>
-                    <option value="140/21.000">140🔷 / Rp. 21.000</option>
-                    <option value="355/51.000" selected>355🔷 / Rp. 51.000</option>
-                    <option value="720/101.000">720🔷 / Rp. 101.000</option>
-                    <option value="1.450,">1.450🔷 / Rp. 201.000</option>
-                    <option value="2.180/301.000">2.180🔷 / Rp. 301.000</option>
-                    <option value="3.640/501.000">3.640🔷 / Rp. 501.000</option>
-                    <option value="7.290/1.001.000">7.290🔷 / Rp. 1.001.000</option>
-                    <option value="36.500/5.001.000">36.500🔷 / Rp. 5.001.000</option>
-                    <option value="73.100/10.001.000">73.100🔷 / Rp. 10.001.000</option>
-                </select>
-              </div>
-              <button type="submit" class="btn btn-primary btn-kirim">Beli</button>
 
-              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                Loading...
-              </button>
-            </form>
+<!-- content -->
+    <div class="container product">
+
+      <div class="product-row">
+          <div class="pr">
+            <a href="./free fire/"><img src="./img/freefire.jpg" alt=""></a>
+            <div class="gbr-title">
+              <p>free fire</p>
+            </div>
           </div>
-        </div>
+          <div class="pr">
+              <img src="./img/pubg.jpg" alt="">
+              <div class="gbr-title">
+                <p>PUBG mobile</p>
+              </div>
+          </div>
+          <div class="pr">
+              <img src="./img/genshin.png" alt="">
+              <div class="gbr-title">
+                <p>genshin impact</p>
+              </div>
+          </div>
+      </div>
+      
+      <div class="product-row">
+          <div class="pr">
+              <img src="./img/ml.jpg" alt="">
+              <div class="gbr-title">
+                <p>mobile legend</p>
+              </div>
+          </div>
+          <div class="pr">
+              <img src="./img/lol.png" alt="">
+              <!-- <p>soon</p> -->
+              <div class="gbr-title">
+                <p>League of Legends: Wild Rift</p>
+              </div>
+          </div>
+          <div class="pr">
+              <img src="./img/valorant.jpg" alt="">
+              <!-- <p>soon</p> -->
+              <div class="gbr-title">
+                <p>valorant</p>
+              </div>
+          </div>
       </div>
 
-    </section>
-    <!-- Akhir Contact -->
+      </div>
+<!-- content -->
 
     <!-- Footer -->
     <footer class="text-black text-center pb-5" style="margin: 2rem 0 0 0;">
@@ -125,5 +173,16 @@
           .catch((error) => console.error('Error!', error.message));
       });
     </script>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
   </body>
 </html>
